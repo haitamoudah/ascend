@@ -26,9 +26,12 @@
 - a pure scoring engine: streak multipliers, penalties for logged misses, partial credit, and effective-dated parameter changes (history is never rescored)
 - charts that draw your climb: cumulative ascent line, daily bars, completion heatmap
 - a home screen with momentum vs last week, top streaks, and a 14-day sparkline
-- three dark themes: midnight, graphite, and void
+- three dark themes (midnight, graphite, void) and a customizable accent color
+- a comfortable/compact density that scales controls, spacing, and charts
+- fully keyboard-operable controls throughout
 - integrated window chrome: a themed header with a drag region replaces the native title bar
 - json export and import, daily startup backups with one-click restore
+- archived habits can be restored, or deleted forever behind a type-to-confirm step
 - an "erase everything" flow behind a type-to-confirm step, with an automatic backup first
 - local reminders and launch-at-startup, no network anywhere
 
@@ -41,10 +44,11 @@ macos and linux installers are on the roadmap.
 ## data and privacy
 
 - 100% local: no cloud, no telemetry, no accounts, no network calls
-- your data lives in a single sqlite database at `%APPDATA%/Ascend/ascend.db`
-- a daily snapshot backup is written on launch (newest 7 kept), with extra snapshots before any import or restore
+- your data lives in a single sqlite database at `%APPDATA%/ascend/ascend.db`
+- a daily snapshot backup is written on launch (newest 7 kept), with extra snapshots before any import, restore, delete, or erase
 - full json export and import from settings > data
-- habits are never hard-deleted: archiving keeps their history in your stats
+- archiving a habit keeps its history in your stats, and it can be restored from settings > data
+- exactly two flows hard-delete data, both behind a type-to-confirm step and an automatic backup: "erase everything", and deleting an archived habit forever (which removes its logs and recomputes historical scores)
 
 ## roadmap
 
