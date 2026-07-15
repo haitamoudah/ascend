@@ -21,10 +21,11 @@
 
 ## features
 
-- weighted habits with per-day schedules: binary, quantity, and duration types
+- weighted habits with per-day schedules: yes/no, quantity, duration, on time, and penalty types
+- on time habits log a day as on time, late, or missed, with an optional target time; penalty habits track things to avoid, where a slip costs points and clean days build a streak
 - daily logging in under 30 seconds, with a backfill window for missed days
 - a pure scoring engine: streak multipliers, penalties for logged misses, partial credit, and effective-dated parameter changes (history is never rescored)
-- charts that draw your climb: cumulative ascent line, daily bars, completion heatmap
+- charts that draw your climb: cumulative ascent line, daily bars, calendar heatmaps with day numbers
 - a home screen with momentum vs last week, top streaks, and a 14-day sparkline
 - three dark themes (midnight, graphite, void) and a customizable accent color
 - a comfortable/compact density that scales controls, spacing, and charts
