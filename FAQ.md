@@ -12,6 +12,14 @@ a snapshot of the database is written every day on launch, and the newest 7 are 
 
 archive it first (manage habits), then restore it or delete it forever from settings > data. deleting forever removes the habit and all of its logs, recomputes historical scores, and writes a backup snapshot first.
 
+## what about exercises, routines, and presets?
+
+they archive the same way and are listed in settings > data, grouped by kind, where you can restore them. archiving a routine keeps its history and only takes it off the daily checklist. these have no delete-forever step on purpose: the only two flows that permanently remove data are "erase everything" and deleting an archived habit.
+
+## where do the body-fat and calorie numbers come from?
+
+standard published formulas, computed on your machine from what you enter: mifflin-st jeor for resting burn, an activity multiplier for daily burn, and the us navy tape method for body fat. they are estimates, labeled with their error ranges in the app (the tape method is roughly plus or minus 3 to 4 points), and they are meant as trend lines, not verdicts. nothing is fetched, and no food or exercise database is bundled.
+
 ## is there telemetry?
 
 no. no analytics, no crash reporting, no accounts, no network calls of any kind.
